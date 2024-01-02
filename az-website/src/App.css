@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-float svg {
+  width: 70px; /* Ajusta el tamaño según tus necesidades */
+  height: 70px;
+  border-radius: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  padding: 10%;
+  opacity: 0.7;
+}
+
+.whatsapp-float svg:hover {
+  transform:scale(1.1);
+  lighting-color: aqua;
+  opacity: 1;
+
+}
