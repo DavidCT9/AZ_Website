@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+body{
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  background: linear-gradient(white 0%, white 90%, black 100%);
+  background-attachment: fixed;  
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -47,11 +55,12 @@
 .whatsapp-float svg {
   width: 70px; /* Ajusta el tamaño según tus necesidades */
   height: 70px;
-  border-radius: 30%;
+  border-radius: 40%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
   padding: 10%;
   opacity: 0.7;
+  overflow: visible;
 }
 
 .whatsapp-float svg:hover {
@@ -60,3 +69,42 @@
   opacity: 1;
 
 }
+
+.titleHeader{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.nav{
+  font-size: larger;
+  color:white
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes slideIn{
+  from {transform: translateX(-100%);} to {transform: translateX(0);}
+}
+
+.animatedItem{
+  animation: slideIn 1s ease-out;
+}
+
+.footer-item :hover{
+font-weight: 700;
+}
+
+.bi{
+  max-width: 200px;
+  max-height: 200px;
+} 
+.quality-icon{
+  max-height: 150px;
+  margin: -20px;
+}
+
