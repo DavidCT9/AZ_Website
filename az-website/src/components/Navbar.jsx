@@ -1,10 +1,16 @@
-import {ReactComponent as AZlogo } from "../img/AZLogo.svg";
+import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
+import Home from './Home';
+import Catalogue from "./Catalogue";
+import Contact from "./Contact";
+import { NavLink } from 'react-router-dom';
+
+
 
 
 function Navbar() {
     return (
         <div>
-            <header className="p-2 " style={{backgroundColor: 'black'}}>
+            <header className="p-2 " style={{ backgroundColor: 'black' }}>
                 <div className="container">
 
                     <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" >
@@ -13,15 +19,15 @@ function Navbar() {
                             <span className=" titleHeader  animatedItem" style={{ color: 'white', fontSize: 'x-large' }}>Empresarial</span>
                         </a>
 
-                        <ul className=" titleHeader nav nav-underline justify-content-center  animatedItem" style={{marginLeft: '10%'}}>
+                        <ul className=" titleHeader nav nav-underline justify-content-center  animatedItem" style={{ marginLeft: '10%' }}>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#" style={{color: 'white'}}>Inicio</a>
+                                <NavLink to='/' className="nav-link" activeClassName='active' aria-current="page" style={{ color: 'white' }}>Inicio</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#" style={{color: 'white'}}>Catalogo</a>
+                                <NavLink to='/Catalogo' className="nav-link " activeClassName='active' style={{ color: 'white' }}>Catalogo</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#" style={{color: 'white'}}>Contacto</a>
+                                <NavLink to='/Contacto' className="nav-link " activeClassName='active'  style={{ color: 'white' }}>Contacto</NavLink>
                             </li>
 
                         </ul>

@@ -17,19 +17,14 @@ import Calidad from "../img/Quality.gif"
 import Personalizacion from "../img/Personalization.gif"
 import Asesoramiento from "../img/Consulting.gif"
 
-
-import { Button, Modal } from 'react-bootstrap';
-
+import { NavLink } from 'react-router-dom';
+import Catalogue from './Catalogue';
 
 
 
 function Home() {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     useEffect(() => {
         const handleResize = () => {
@@ -47,7 +42,9 @@ function Home() {
 
 
     return (
-        <div style={{}}>
+        <div >
+
+            {/* -------------------------------- CAROUSEL  -----------------------------------*/}
 
             <div id="myCarousel" className="carousel slide mb-6 pointer-event" data-bs-ride="carousel" style={{ boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.5)' }}>
                 <div className="carousel-indicators">
@@ -75,7 +72,7 @@ function Home() {
                             <div className="carousel-caption">
                                 <h1>Contamos con un extenso catalogo</h1>
                                 <p>Nuestra empresa diseña y fabrica uniformes personalizados diferentes industrias y cubriendo los requisitos de estas. </p>
-                                <p><a className="btn btn-lg btn-outline-light rounded-pill" href="#">Conocelo Aqui</a></p>
+                                <p><NavLink to='/Catalogo' className="btn btn-lg btn-outline-light rounded-pill" >Conocelo Aqui</NavLink></p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +83,7 @@ function Home() {
                             <div className="carousel-caption text-end">
                                 <h1>Viste y personaliza a tu empresa</h1>
                                 <p>Contactanos para hacer sus uniformes a la medida, personalizados y a su gusto</p>
-                                <p><a className="btn btn-lg btn-outline-light rounded-pill" href="#">Mandanos un mensaje</a></p>
+                                <p><NavLink to='/Contacto' className="btn btn-lg btn-outline-light rounded-pill" >¡Mandanos un mensaje!</NavLink></p>
                             </div>
                         </div>
                     </div>
@@ -101,10 +98,12 @@ function Home() {
                 </button>
             </div>
 
+            {/* -------------------------------- IDENTIDAD  -----------------------------------*/}
+
             <div className="element row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-5  shadow-lg" style={{ margin: "3dvw", backgroundColor: 'white', boxShadow: '50px 10px 10px rgba(0, 0, 0, 0.5)' }} id='ID'>
                 <div className="col-lg-7 p-3 p-lg-5 pt-lg-3" style={{}}>
                     <h5 className="mb-4 display-4 lh-1 " style={{ fontWeight: '600', color: 'black' }}>Nuestra Identidad</h5>
-                    <p className="lead" style={{ fontWeight: '400', color: '#636363' }}><em>Somos AZ empresarial, una prestigiosa organización con una <strong> trayectoria de 15 años en la creación y diseño de uniformes empresariales. </strong>Nuestro enfoque se centra en el desarrollo de soluciones a medida, diseñadas específicamente para satisfacer las necesidades únicas de cada uno de nuestros socios y clientes.</em></p>
+                    <p className="lead" style={{ fontWeight: '400', color: '#636363' }}><em>Somos AZ empresarial, una prestigiosa organización con una <strong> trayectoria de 15 años en la creación y diseño de uniformes empresariales. </strong>Nuestro enfoque se centra en el desarrollo de soluciones a corde a sus necesidades, diseñadas específicamente para satisfacer a cada uno de nuestros socios y clientes.</em></p>
 
                 </div>
                 <div className="col-lg-3 offset-lg-1 p-0 overflow-hidden " style={{ textAlign: 'center' }}>
@@ -112,8 +111,10 @@ function Home() {
                 </div>
             </div>
 
+            {/* -------------------------------- CARACTERISTICAS  -----------------------------*/}
+
             <div className="container px-4 py-5" id="featured-3">
-                <h1 className="pb-2 border-bottom" style={{ fontWeight: '700', fontStyle: 'bold', textAlign: 'center' }}>NUESTRAS CARACTERÍSTICAS</h1>
+                <h1 className="pb-2 border-bottom" style={{ fontWeight: '700', fontStyle: 'bold', textAlign: 'center' }}>PORQUE SOMOS LA MEJOR OPCIÓN</h1>
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
                     <div className="feature col">
                         <div className="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3" style={{ alignContent: 'center' }}>
@@ -136,107 +137,14 @@ function Home() {
                             <img src={Asesoramiento} className="bi" />
                         </div>
                         <h3 className="fs-2 text-body-emphasis" style={{ alignItems: 'center', textAlign: 'center' }}><em>Asesoría de imagen empresarial</em></h3>
-                        <p style={{ color: '#636363' }}>Nosotros nos identificamos por brindar una asesoría integral en imagen empresarial, guiando a nuestros clientes en cada paso del proceso de venta para garantizar uniformes que se ajusten a sus necesidades y reflejen su identidad corporativa de manera óptima.</p>
+                        <p style={{ color: '#636363' }}>Nosotros nos identificamos por brindar una asesoría integral en imagen empresarial, guiando a nuestros clientes en cada paso del proceso de venta. Para que su empresa proyecte una imagen relacionada con el giro de su negocio.</p>
 
                     </div>
                 </div>
             </div>
 
 
-            <Modal show={show} onHide={handleClose} centered>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal title</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>This is a vertically centered modal.</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="btn btn-dark rounded-pill" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal>
-
-            <div className="container px-4 py-5" id="custom-cards">
-                <h2 className="pb-2 border-bottom" style={{ fontSize: '5dvh', fontWeight: '700', textAlign: 'center' }}>CATALOGO 2024</h2>
-
-                <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" >
-                    <div className="col">
-
-                        <Button className='h-100 w-100' variant="" onClick={handleShow} data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${Calidad})` }}>
-                                <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style={{ opacity: '60%' }}>Short title, long jacket</h3>
-                                    <ul className="d-flex list-unstyled mt-auto">
-                                        <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
-                                        </li>
-                                        <li className="d-flex align-items-center me-3">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
-                                            <small>Earth</small>
-                                        </li>
-                                        <li className="d-flex align-items-center">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#calendar3"></use></svg>
-                                            <small>3d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </Button>
-
-                    </div>
-
-
-                    <div className="col">
-                        <Button className='h-100 w-100' variant="" onClick={handleShow} data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: "url('unsplash-photo-2.jpg')" }}>
-                                <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                                    <ul className="d-flex list-unstyled mt-auto">
-                                        <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
-                                        </li>
-                                        <li className="d-flex align-items-center me-3">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
-                                            <small>Pakistan</small>
-                                        </li>
-                                        <li className="d-flex align-items-center">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#calendar3"></use></svg>
-                                            <small>4d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </Button>
-                    </div>
-
-                    <div className="col">
-                        <Button className='h-100 w-100' variant="" onClick={handleShow} data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: "url('unsplash-photo-3.jpg')" }}>
-                                <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                                    <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                                    <ul className="d-flex list-unstyled mt-auto">
-                                        <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
-                                        </li>
-                                        <li className="d-flex align-items-center me-3">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
-                                            <small>California</small>
-                                        </li>
-                                        <li className="d-flex align-items-center">
-                                            <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#calendar3"></use></svg>
-                                            <small>5d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </Button>
-                    </div>
-                </div>
-
-
-
-            </div>
+            {/* WhatsApp PushButton */}
 
 
 
