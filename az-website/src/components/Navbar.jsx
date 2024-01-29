@@ -1,7 +1,4 @@
 import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
-import Home from './Home';
-import Catalogue from "./Catalogue";
-import Contact from "./Contact";
 import { NavLink } from 'react-router-dom';
 
 
@@ -21,13 +18,13 @@ function Navbar() {
 
                         <ul className=" titleHeader nav nav-underline justify-content-center  animatedItem" style={{ marginLeft: '10%' }}>
                             <li className="nav-item">
-                                <NavLink to='/' className="nav-link" activeClassName='active' aria-current="page" style={{ color: 'white' }}>Inicio</NavLink>
+                                <NavLink to='/' className="nav-link" activeclassname='active' aria-current="page" style={{ color: 'white' }}>Inicio</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/Catalogo' className="nav-link " activeClassName='active' style={{ color: 'white' }}>Catalogo</NavLink>
+                                <NavLink to='/Catalogo' className="nav-link " activeclassname='active' style={{ color: 'white' }}>Catalogo</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/Contacto' className="nav-link " activeClassName='active'  style={{ color: 'white' }}>Contacto</NavLink>
+                                <NavLink to='/Contacto' className="nav-link " activeclassname='active'  style={{ color: 'white' }}>Contacto</NavLink>
                             </li>
 
                         </ul>

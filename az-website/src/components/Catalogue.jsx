@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
 import { ReactComponent as WhatsAppPushButton } from "../img/whatsapp-pushButton.svg";
-import Calidad from "../img/Quality.gif"
-
+import Calidad from "../img/Quality.gif";
+import { Tooltip } from 'react-tooltip'
 
 
 function Catalogue() {
@@ -22,7 +22,7 @@ function Catalogue() {
                 <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" >
                     <div className="col">
 
-                        <Button className='h-100 w-100' variant="" data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
+                        <Button className='h-100 w-100 ' variant="" data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
                             <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${Calidad})` }}>
                                 <div className="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style={{ opacity: '70%' }}>Empresarial ejecutivo</h3>
@@ -221,44 +221,107 @@ function Catalogue() {
 
                             {/* ------------------- MODAL CAROUSEL --------------------*/}
 
-                            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <div id="carouselExampleDark" className="carousel carousel-dark slide">
+                                <div className="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src={Calidad} class="d-block w-100" alt="..."/>
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>First slide label</h5>
-                                                <p>Some representative placeholder content for the first slide.</p>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active" data-bs-interval="10000">
+                                        <img src={Calidad} className="d-block w-100 h-100" alt="..." />
+                                        <div className="carousel-caption  d-md-block">
+                                        </div>
+
+                                        <div className="container" style={{ position: 'relative', bottom: '50px', textAlign: 'center' }}>
+                                            <h4 style={{ fontWeight: '700', margin: '5%' }}>Colores Disponibles</h4>
+                                            {/*-------------------- C O L O R - G R I D  ----------------*/}
+                                            <div className="container text-center">
+                                                <div className="row justify-content-md-center " style={{ marginRight: '5%', marginLeft: '5%' }}>
+                                                    <div className="col-2">
+                                                        <div data-tooltip-id="my-tooltip1"
+                                                            data-tooltip-content="RED"
+                                                            data-tooltip-place="top"
+                                                            className="circle"
+                                                            data-tip="Tooltip text"
+                                                            style={{ backgroundColor: 'red' }}>
+                                                            <Tooltip id="my-tooltip1" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-2">
+                                                        <div data-tooltip-id="my-tooltip2"
+                                                            data-tooltip-content="RED"
+                                                            data-tooltip-place="top"
+                                                            className="circle"
+                                                            data-tip="Tooltip text"
+                                                            style={{ backgroundColor: 'red' }}>
+                                                            <Tooltip id="my-tooltip2" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-2">
+                                                        <div data-tooltip-id="my-tooltip3"
+                                                            data-tooltip-content="RED"
+                                                            data-tooltip-place="top"
+                                                            className="circle"
+                                                            data-tip="Tooltip text"
+                                                            style={{ backgroundColor: 'red' }}>
+                                                            <Tooltip id="my-tooltip3" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-2">
+                                                        <div data-tooltip-id="my-tooltip4"
+                                                            data-tooltip-content="RED"
+                                                            data-tooltip-place="top"
+                                                            className="circle"
+                                                            data-tip="Tooltip text"
+                                                            style={{ backgroundColor: 'red' }}>
+                                                            <Tooltip id="my-tooltip4" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-2">
+                                                        <div data-tooltip-id="my-tooltip5"
+                                                            data-tooltip-content="RED"
+                                                            data-tooltip-place="top"
+                                                            className="circle"
+                                                            data-tip="Tooltip text"
+                                                            style={{ backgroundColor: 'red' }}>
+                                                            <Tooltip id="my-tooltip5" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            {/*-------------------- C O L O R - G R I D  ----------------*/}
+                                        </div>
+
                                     </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="..." class="d-block w-100" alt="..."/>
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>Second slide label</h5>
-                                                <p>Some representative placeholder content for the second slide.</p>
-                                            </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                        <img src="..." className="d-block w-100" alt="..." />
+                                        <div className="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="..."/>
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>Third slide label</h5>
-                                                <p>Some representative placeholder content for the third slide.</p>
-                                            </div>
+                                    <div className="carousel-item">
+                                        <img src="..." className="d-block w-100" alt="..." />
+                                        <div className="carousel-caption d-none d-md-block">
+                                            <h5>Third slide label</h5>
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
                                 </button>
+
                             </div>
+
+                            {/* ------------------- MODAL CAROUSEL --------------------*/}
+
 
 
                         </div>
@@ -270,6 +333,44 @@ function Catalogue() {
             </div>
 
 
+
+            {/*-------------------- C O L O R - G R I D  ----------------*/}
+
+            <div className="container text-center">
+                <div className="row justify-content-md-center">
+                    <div className="col-sm">
+                        <div data-tooltip-id="my-tooltip1"
+                            data-tooltip-content="RED"
+                            data-tooltip-place="top"
+                            className="circle"
+                            data-tip="Tooltip text"
+                            style={{ backgroundColor: 'red' }}>
+                            <Tooltip id="my-tooltip1" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div data-tooltip-id="my-tooltip2"
+                            data-tooltip-content="RED"
+                            data-tooltip-place="top"
+                            className="circle"
+                            data-tip="Tooltip text"
+                            style={{ backgroundColor: 'red' }}>
+                            <Tooltip id="my-tooltip2" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div data-tooltip-id="my-tooltip3"
+                            data-tooltip-content="RED"
+                            data-tooltip-place="top"
+                            className="circle"
+                            data-tip="Tooltip text"
+                            style={{ backgroundColor: 'red' }}>
+                            <Tooltip id="my-tooltip3" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*-------------------- C O L O R - G R I D  ----------------*/}
 
 
             <a href="https://api.whatsapp.com/send?phone=3311662772" className="whatsapp-float" target="_blank" rel="noopener noreferrer">

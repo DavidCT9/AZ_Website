@@ -16,6 +16,8 @@ function Contact() {
     };
 
     const onSubmit = (e) => {
+        
+
         e.preventDefault();
         emailjs.sendForm('service_g16rbu1', 'template_eyryzph', e.target, 'jklAb_u4-TUOHhCxJ')
             .then((result) => {
@@ -40,11 +42,11 @@ function Contact() {
                         <form className="p-4 p-md-5 border rounded-3 bg-body-tertiary shadow-lg contact-form" onSubmit={onSubmit}>
 
                             <div className="form-floating mb-3">
-                                <input name="from_name" type="text" className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={handleChange} />
+                                <input required name="from_name" type="text" className="form-control" id="floatingEmail" placeholder="name@example.com" onChange={handleChange} />
                                 <label htmlFor="floatingEmail">Nombre / Empresa</label>
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="email" name='reply_to' onChange={handleChange} className="form-control" id="floatingEmail" placeholder="name@example.com" />
+                                <input required type="email" name='reply_to' onChange={handleChange} className="form-control" id="floatingEmail" placeholder="name@example.com" />
                                 <label htmlFor="floatingEmail">Correo Electrónico</label>
                             </div>
                             <div className="form-floating mb-3">
@@ -55,7 +57,11 @@ function Contact() {
                                 <input type="text" name="to_name" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="123-456-7890" />
                                 <label htmlFor="floatingPhone">Numero de telefono (optional)</label>
                             </div>
-                            <button className="w-100 btn btn-lg btn-primary" type="submit" value="Submit">Submit</button>
+                            <div className="form-floating mb-3">
+                                <input required type="number" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="Aprox" />
+                                <label htmlFor="floatingPhone">Personas en su equipo</label>
+                            </div>
+                            <button className="w-100 btn btn-lg btn-primary" type="submit" value="Submit" >Submit</button>
                         </form>
                     </div>
                 </div>

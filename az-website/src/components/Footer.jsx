@@ -2,6 +2,8 @@ import { ReactComponent as WhatsAppLogo } from "../img/Whats.svg";
 import { ReactComponent as FacebookLogo } from "../img/Face.svg";
 import { ReactComponent as InstagramLogo } from "../img/Insta.svg";
 import {ReactComponent as AZlogo } from "../img/AZLogo.svg";
+import { NavLink } from 'react-router-dom';
+
 
 
 function Footer() {
@@ -15,13 +17,13 @@ function Footer() {
                         <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                             <AZlogo className="bi" width="40" height="40" />
                         </a>
-                        <span className="mb-3 mb-md-0" style={{color:'white', fontSize:'large'}}>© {year} AZ Empresarial</span>
+                        <span className="mb-3 mb-md-0" style={{color:'white', fontSize:'large'}}>Empresarial © {year}</span>
                     </div>
 
-                    <ul className="nav justify-content-center mr-4">
-                        <li className="nav-item footer-item"><a href="#" className="nav-link px-2 " style={{color:'white'}}>Inicio</a></li>
-                        <li className="nav-item footer-item"><a href="#" className="nav-link px-2 " style={{color:'white'}}>Catalogo</a></li>
-                        <li className="nav-item footer-item"><a href="#" className="nav-link px-2 " style={{color:'white'}}>Contacto</a></li>
+                    <ul className="nav justify-content-center mr-4 ml-4">
+                        <li className="nav-item footer-item"><NavLink to='/' className="nav-link px-2 " style={{color:'white'}}>Inicio</NavLink></li>
+                        <li className="nav-item footer-item"><NavLink to='/Catalogo' className="nav-link px-2 " style={{color:'white'}}>Catalogo</NavLink></li>
+                        <li className="nav-item footer-item"><NavLink to='/Contacto' className="nav-link px-2 " style={{color:'white'}}>Contacto</NavLink></li>
 
                     </ul>
 

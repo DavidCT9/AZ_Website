@@ -145,12 +145,10 @@ function Home() {
 
 
             {/* WhatsApp PushButton */}
-
-
-
             <a href="https://api.whatsapp.com/send?phone=3311662772" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
                 <WhatsAppPushButton className="bi" />
             </a>
+            
         </div>
     );
 }
