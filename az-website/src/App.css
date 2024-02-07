@@ -144,3 +144,22 @@ Button :hover>* {
 
 .circle .Tooltip .example-arrow{
 visibility: hidden;}
+
+.img-magnifier-container {
+  position: relative;
+  width: 10dvw;
+  height: auto;
+}
+
+.magnifier-img{
+ width: 10dvw;
+ height: auto;
+  
+}
+
+.magnifier-image{
+  width: 5dvw;
+  height: 5vw;
+  border: 2px solid #fff;
+  border-radius: 20%;
+}
