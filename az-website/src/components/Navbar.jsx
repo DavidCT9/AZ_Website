@@ -1,4 +1,3 @@
-import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
 import { NavLink } from 'react-router-dom';
 
 
@@ -12,7 +11,7 @@ function Navbar() {
 
                     <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" >
                         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                            <AZlogo className="bi me-2" width="40" height="40" />
+                            <img src="/img/AZLogo.svg" className="bi me-2" width="40" height="40" />
                             <span className=" titleHeader  animatedItem" style={{ color: 'white', fontSize: 'x-large' }}>Empresarial</span>
                         </a>
 

@@ -1,22 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
-import { ReactComponent as MobileItem1 } from '../img/1.svg'
-import { ReactComponent as MobileItem2 } from '../img/2.svg'
-import { ReactComponent as MobileItem3 } from '../img/3.svg'
-
-import { ReactComponent as PCItem1 } from '../img/PC1.svg'
-import { ReactComponent as PCItem2 } from '../img/PC2.svg'
-import { ReactComponent as PCItem3 } from '../img/PC3.svg'
-
-import { ReactComponent as WhatsAppPushButton } from "../img/whatsapp-pushButton.svg";
-import { ReactComponent as EnterpriseMen } from '../img/EnterpriseMen.svg';
-
-import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
-
-import Calidad from "../img/Quality.gif"
-import Personalizacion from "../img/Personalization.gif"
-import Asesoramiento from "../img/Consulting.gif"
-
 import { NavLink } from 'react-router-dom';
 import Catalogue from './Catalogue';
 
@@ -54,8 +36,8 @@ function Home() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item">
-                        {isMobile ? <MobileItem1 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></MobileItem1>
-                            : <PCItem1 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></PCItem1>}
+                        {isMobile ? <img src="img/1.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+                            : <img src="img/PC1.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>}
 
                         <div className="container">
                             <div className="carousel-caption text-start">
@@ -66,8 +48,8 @@ function Home() {
                         </div>
                     </div>
                     <div className="carousel-item active">
-                        {isMobile ? <MobileItem2 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></MobileItem2>
-                            : <PCItem2 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></PCItem2>}
+                        {isMobile ? <img src="img/2.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+                            : <img src="img/PC2.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>}
                         <div className="container">
                             <div className="carousel-caption">
                                 <h1>Contamos con un extenso catalogo</h1>
@@ -77,8 +59,8 @@ function Home() {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        {isMobile ? <MobileItem3 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></MobileItem3>
-                            : <PCItem3 className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></PCItem3>}
+                        {isMobile ? <img src="img/3.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+                            : <img src="img/PC3.svg" className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>}
                         <div className="container">
                             <div className="carousel-caption text-end">
                                 <h1>Viste y personaliza a tu empresa</h1>
@@ -107,7 +89,7 @@ function Home() {
 
                 </div>
                 <div className="col-lg-3 offset-lg-1 p-0 overflow-hidden " style={{ textAlign: 'center' }}>
-                    <EnterpriseMen className="rounded-lg-3 mb-3" style={{ width: "200px", height: '200px' }}></EnterpriseMen>
+                    <img src="img/EnterpriseMen.svg" className="rounded-lg-3 mb-3" style={{ width: "200px", height: '200px' }}></img>
                 </div>
             </div>
 
@@ -118,7 +100,7 @@ function Home() {
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
                     <div className="feature col">
                         <div className="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3" style={{ alignContent: 'center' }}>
-                            <img src={Personalizacion} alt='Personalization' className="bi" />
+                            <img src="img/Personalization.gif" alt='Personalization' className="bi" />
                         </div>
                         <h3 className="fs-2 text-body-emphasis" style={{ alignItems: 'center', textAlign: 'center' }}><em>Flexibilidad y personalización</em></h3>
                         <p style={{ color: '#636363' }}>En nuestra empresa, nos destacamos por ofrecer un servicio de personalización y fabricación de uniformes empresariales. Nos caracteriza nuestra flexibilidad para adaptarnos a las necesidades de cada empresa, asegurando que cada uniforme refleje su identidad única y cumpla con sus requisitos específicos.</p>
@@ -126,7 +108,7 @@ function Home() {
                     </div>
                     <div className="feature col">
                         <div className="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
-                            <img src={Calidad} className="quality-icon" />
+                            <img src="img/Quality.gif" className="quality-icon" />
                         </div>
                         <h3 className="fs-2 text-body-emphasis" style={{ alignItems: 'center', textAlign: 'center' }}><em>Calidad</em> </h3>
                         <p style={{ color: '#636363' }}>En AZ Empresarial, ofrecemos uniformes empresariales de alta calidad, hechos a medida con atención meticulosa al detalle, garantizando durabilidad, comodidad y sofisticación para representar a tu empresa de la mejor manera.</p>
@@ -134,7 +116,7 @@ function Home() {
                     </div>
                     <div className="feature col">
                         <div className="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
-                            <img src={Asesoramiento} className="bi" />
+                            <img src="img/Consulting.gif" className="bi" />
                         </div>
                         <h3 className="fs-2 text-body-emphasis" style={{ alignItems: 'center', textAlign: 'center' }}><em>Asesoría de imagen empresarial</em></h3>
                         <p style={{ color: '#636363' }}>Nosotros nos identificamos por brindar una asesoría integral en imagen empresarial, guiando a nuestros clientes en cada paso del proceso de venta. Para que su empresa proyecte una imagen relacionada con el giro de su negocio.</p>
@@ -146,7 +128,7 @@ function Home() {
 
             {/* WhatsApp PushButton */}
             <a href="https://api.whatsapp.com/send?phone=3311662772" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
-                <WhatsAppPushButton className="bi" />
+                <img src="img/whatsapp-pushButton.svg" className="bi" />
             </a>
             
         </div>

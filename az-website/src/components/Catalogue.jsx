@@ -1,8 +1,5 @@
 import React from "react";
 import { Button } from 'react-bootstrap';
-import { ReactComponent as AZlogo } from "../img/AZLogo.svg";
-import { ReactComponent as WhatsAppPushButton } from "../img/whatsapp-pushButton.svg";
-import Calidad from "../img/Quality.gif";
 import { Tooltip } from 'react-tooltip';
 import OfficeModal from "./CatalogueModals/OfficeModal"
 import {
@@ -29,12 +26,12 @@ function Catalogue() {
                     <div className="col">
 
                         <Button className='h-100 w-100 ' variant="" data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${Calidad})` }}>
+                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${"img/Quality.gif"})` }}>
                                 <div className="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style={{ opacity: '70%' }}>Empresarial ejecutivo</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg" alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -60,7 +57,7 @@ function Catalogue() {
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style={{ opacity: '70%' }}>Operativo y oficina</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg"  alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -84,7 +81,7 @@ function Catalogue() {
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style={{ opacity: '70%' }}>Hotelería</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg" alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -107,12 +104,12 @@ function Catalogue() {
                     <div className="col">
 
                         <Button className='h-100 w-100' variant="" data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${Calidad})` }}>
+                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url( "img/Quality.gif"})` }}>
                                 <div className="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style={{ opacity: '70%' }}>Industria Alimenticia</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg" alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -138,7 +135,7 @@ function Catalogue() {
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style={{ opacity: '70%' }}>Clínica</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg" alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -162,7 +159,7 @@ function Catalogue() {
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style={{ opacity: '70%' }}>Seguridad</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg  " alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -186,12 +183,12 @@ function Catalogue() {
                     <div className="col">
 
                         <Button className='h-100 w-100' variant="" data-bs-toggle="modal" data-bs-target="#CatalogueItem1" style={{ padding: '0' }}>
-                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url(${Calidad})` }}>
+                            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={{ backgroundImage: `url( "img/Quality.gif"})` }}>
                                 <div className="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
                                     <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style={{ opacity: '70%' }}>Agropecuario</h3>
                                     <ul className="d-flex list-unstyled mt-auto">
                                         <li className="me-auto">
-                                            <AZlogo alt="Bootstrap" width="32" height="32" className="" ></AZlogo>
+                                            <img src=" img/AZLogo.svg  " alt="Bootstrap" width="32" height="32" className="" ></img>
                                         </li>
                                         <li className="d-flex align-items-center me-3" style={{ visibility: 'hidden' }}>
                                             <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill"></use></svg>
@@ -216,61 +213,15 @@ function Catalogue() {
             <OfficeModal />
 
             <GlassMagnifier
-                imageSrc={Calidad}
+                imageSrc={"img/Quality.gif"}
                 imageAlt="Example"
-                largeImageSrc={Calidad} // Optional
+                largeImageSrc={"img/Quality.gif"} // Optional
                 style={{width:'10dvw'}}
             />
 
 
-
-
-
-            <Magnifier style={{ width: '10dvw' }} imageSrc="https://c8.alamy.com/compes/b3nchm/un-hombre-vestido-con-el-indio-quechua-tejer-tradicional-sombrero-del-altiplano-peruano-b3nchm.jpg" />
-
-
-
-            {/*-------------------- C O L O R - G R I D  ----------------*/}
-
-            <div className="container text-center">
-                <div className="row justify-content-md-center">
-                    <div className="col-sm">
-                        <div data-tooltip-id="my-tooltip1"
-                            data-tooltip-content="RED"
-                            data-tooltip-place="top"
-                            className="circle"
-                            data-tip="Tooltip text"
-                            style={{ backgroundColor: 'red' }}>
-                            <Tooltip id="my-tooltip1" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <div data-tooltip-id="my-tooltip2"
-                            data-tooltip-content="RED"
-                            data-tooltip-place="top"
-                            className="circle"
-                            data-tip="Tooltip text"
-                            style={{ backgroundColor: 'red' }}>
-                            <Tooltip id="my-tooltip2" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
-                        </div>
-                    </div>
-                    <div className="col-sm">
-                        <div data-tooltip-id="my-tooltip3"
-                            data-tooltip-content="RED"
-                            data-tooltip-place="top"
-                            className="circle"
-                            data-tip="Tooltip text"
-                            style={{ backgroundColor: 'red' }}>
-                            <Tooltip id="my-tooltip3" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*-------------------- C O L O R - G R I D  ----------------*/}
-
-
             <a href="https://api.whatsapp.com/send?phone=3311662772" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
-                <WhatsAppPushButton className="bi" />
+                <img src=" img/whatsapp-pushButton.svg" className="bi" />
             </a>
         </div>
     );
