@@ -54,9 +54,9 @@ function OfficeModal() {
                                 <div className="carousel-inner">
                                     <div className="carousel-item active" data-bs-interval="10000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/1.png "}
+                                            imageSrc={  "img/OfficeImg/1.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/1.png "} // Optional
+                                            largeImageSrc={  "img/OfficeImg/1.svg "} // Optional
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -125,9 +125,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="2000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/2.png "}
+                                            imageSrc={  "img/OfficeImg/2.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/2.png "} // Optional
+                                            largeImageSrc={  "img/OfficeImg/2.svg "} // Optional
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -196,9 +196,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="3000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/3.png "}
+                                            imageSrc={  "img/OfficeImg/3.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/3.png "} // Optional
+                                            largeImageSrc={  "img/OfficeImg/3.svg "} // Optional
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -337,9 +337,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="4000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/4.png "}
+                                            imageSrc={  "img/OfficeImg/4.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/4.png "} // Optional
+                                            largeImageSrc={  "img/OfficeImg/4.svg "} // Optional
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -428,9 +428,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="5000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/5.png "}
+                                            imageSrc={  "img/OfficeImg/5.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/5.png "}
+                                            largeImageSrc={  "img/OfficeImg/5.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -519,9 +519,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="6000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/6.png "}
+                                            imageSrc={  "img/OfficeImg/6.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/6.png "}
+                                            largeImageSrc={  "img/OfficeImg/6.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -661,9 +661,9 @@ function OfficeModal() {
                                     <div className="carousel-item  " data-bs-interval="7000">
 
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/7.png "}
+                                            imageSrc={  "img/OfficeImg/7.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/7.png "}
+                                            largeImageSrc={  "img/OfficeImg/7.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -743,9 +743,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="8000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/8.png "}
+                                            imageSrc={  "img/OfficeImg/8.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/8.png "}
+                                            largeImageSrc={  "img/OfficeImg/8.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -775,9 +775,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="9000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/9.png "}
+                                            imageSrc={  "img/OfficeImg/9.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/9.png "}
+                                            largeImageSrc={  "img/OfficeImg/9.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -846,9 +846,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="10000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/10.png "}
+                                            imageSrc={  "img/OfficeImg/10.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/10.png "}
+                                            largeImageSrc={  "img/OfficeImg/10.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -917,9 +917,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="11000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/11.png "}
+                                            imageSrc={  "img/OfficeImg/11.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/11.png "}
+                                            largeImageSrc={  "img/OfficeImg/11.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1018,9 +1018,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="12000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/12.png "}
+                                            imageSrc={  "img/OfficeImg/12.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/12.png "}
+                                            largeImageSrc={  "img/OfficeImg/12.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1069,9 +1069,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="13000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/13.png "}
+                                            imageSrc={  "img/OfficeImg/13.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/13.png "}
+                                            largeImageSrc={  "img/OfficeImg/13.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1120,9 +1120,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="14000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/14.png "}
+                                            imageSrc={  "img/OfficeImg/14.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/14.png "}
+                                            largeImageSrc={  "img/OfficeImg/14.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1171,9 +1171,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="15000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/15.png "}
+                                            imageSrc={  "img/OfficeImg/15.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/15.png "}
+                                            largeImageSrc={  "img/OfficeImg/15.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1203,9 +1203,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="16000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/16.png "}
+                                            imageSrc={  "img/OfficeImg/16.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/16.png "}
+                                            largeImageSrc={  "img/OfficeImg/16.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1235,9 +1235,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="17000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/17.png "}
+                                            imageSrc={  "img/OfficeImg/17.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/17.png "}
+                                            largeImageSrc={  "img/OfficeImg/17.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)' }} />
                                         <div className="carousel-caption  d-md-block">
@@ -1286,9 +1286,9 @@ function OfficeModal() {
                                     </div>
                                     <div className="carousel-item  " data-bs-interval="18000">
                                         <GlassMagnifier
-                                            imageSrc={  "img/OfficeImg/18.png "}
+                                            imageSrc={  "img/OfficeImg/18.svg "}
                                             imageAlt="Example"
-                                            largeImageSrc={  "img/OfficeImg/18.png "}
+                                            largeImageSrc={  "img/OfficeImg/18.svg "}
                                             className="d-block w-100 h-100"
                                             style={{ borderRadius: '5%', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)', width:'10dvw' }} />
                                         <div className="carousel-caption  d-md-block">
