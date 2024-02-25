@@ -1,10 +1,5 @@
 import React from "react";
 
-//import jaspe from "../../img/Jaspe.jpg"
-//import negroJaspe from "../../img/NegroJaspe.jpg"
-
-
-
 import { Tooltip } from 'react-tooltip';
 import {
     Magnifier,
@@ -18,7 +13,7 @@ function OfficeModal() {
 
             {/* MODALS */}
 
-            <div className="modal fade" id="CatalogueItem1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="OfficeModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                         <div className="modal-header border-bottom-0">
@@ -29,26 +24,26 @@ function OfficeModal() {
 
                             {/* ------------------- MODAL CAROUSEL --------------------*/}
 
-                            <div id="carouselExampleDark" className="carousel carousel-dark slide">
+                            <div id="carouselOffice" className="carousel carousel-dark slide">
                                 <div className="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="13" aria-label="Slide 14"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="14" aria-label="Slide 15"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="15" aria-label="Slide 16"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="16" aria-label="Slide 17"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                                    <button type="button" data-bs-target="#carouselOffice" data-bs-slide-to="17" aria-label="Slide 18"></button>
 
                                 </div>
                                 <div className="carousel-inner">
@@ -73,7 +68,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="1Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -144,7 +139,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="2Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -215,7 +210,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="3Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -295,7 +290,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="3NegroJAspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -356,7 +351,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="4Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -406,7 +401,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="4NegroJAspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -447,7 +442,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="5Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -497,7 +492,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/NegroJaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="5NegroJAspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -538,7 +533,7 @@ function OfficeModal() {
                                                             data-tooltip-place="top"
                                                             className="circle"
                                                             data-tip="Tooltip text"
-                                                            style={{ backgroundImage: `url(${"img/Jaspe.png"})`, backgroundSize: 'contain' }}>
+                                                            style={{ backgroundImage: `url(${"img/Jaspe.jpg"})`, backgroundSize: 'contain' }}>
                                                             <Tooltip id="6Jaspe" className='Tooltip' classNameArrow="example-arrow" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', fontWeight: '600', padding: '5px', borderRadius: '15px' }} />
                                                         </div>
                                                     </div>
@@ -1339,11 +1334,11 @@ function OfficeModal() {
                                 </div>
 
 
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselOffice" data-bs-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselOffice" data-bs-slide="next">
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>

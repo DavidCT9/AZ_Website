@@ -9,6 +9,7 @@ function Contact() {
         to_name: '',
         message: '',
         reply_to: '',
+        teamNum: '',
     });
 
     const handleChange = (e) => {
@@ -16,7 +17,7 @@ function Contact() {
     };
 
     const onSubmit = (e) => {
-        
+
 
         e.preventDefault();
         emailjs.sendForm('service_g16rbu1', 'template_eyryzph', e.target, 'jklAb_u4-TUOHhCxJ')
@@ -54,14 +55,17 @@ function Contact() {
                                 <label htmlFor="floatingMessage">Mensaje</label>
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="text" name="to_name" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="123-456-7890" />
+                                <input type="text" name="to_name" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="33-33-33-33" />
                                 <label htmlFor="floatingPhone">Numero de telefono (optional)</label>
                             </div>
                             <div className="form-floating mb-3">
-                                <input required type="number" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="Aprox" />
+                                <input required name='teamNum' type="number" onChange={handleChange} className="form-control" id="floatingPhone" placeholder="Aprox" />
                                 <label htmlFor="floatingPhone">Personas en su equipo</label>
                             </div>
-                            <button className="w-100 btn btn-lg btn-primary" type="submit" value="Submit" >Submit</button>
+                            <button className="button w-100 btn-lg " type="submit" value="Submit" >ENVIAR
+
+
+                            </button>
                         </form>
                     </div>
                 </div>

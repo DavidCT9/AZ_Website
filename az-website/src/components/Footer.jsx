@@ -26,7 +26,7 @@ function Footer() {
 
                     <ul className="nav col-md-4 justify-content-center list-unstyled d-flex">
                         <li className="ms-3"><a className="text-body-secondary" href="https://api.whatsapp.com/send?phone=3311662772" target="_blank" rel="noopener noreferrer"><img src="img/Whats.svg" className="bi" width="24" height="24" /></a></li>
-                        <li className="ms-3"><a className="text-body-secondary" href="#" target="_blank" rel="noopener noreferrer"><img src="img/Insta.svg" className="bi" width="24" height="24" /></a></li>
+                        <li className="ms-3"><a className="text-body-secondary" href="#" target="_blank" rel="noopener noreferrer"><img src="img/Instagram.svg" className="bi" width="24" height="24" /></a></li>
                         <li className="ms-3"><a className="text-body-secondary" href="#" target="_blank" rel="noopener noreferrer"><img src="img/Face.svg" className="bi" width="26" height="26" /></a></li>
                     </ul>
                 </footer>
