@@ -1,11 +1,6 @@
 import React from "react";
 import { Button } from 'react-bootstrap';
-import { Tooltip } from 'react-tooltip';
 import OfficeModal from "./CatalogueModals/OfficeModal"
-import {
-    Magnifier,
-    GlassMagnifier,
-} from "react-image-magnifiers";
 import BusinessModal from "./CatalogueModals/BusinessModal";
 
 
